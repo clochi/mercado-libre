@@ -8,7 +8,7 @@ import { Location } from '@angular/common';
 })
 export class CanloadItemsGuard implements CanLoad {
   constructor(private location: Location, private router: Router) {}
-  pattern = new RegExp(/items(\?search=\w+|\/\d+)/, 'g');
+  pattern = new RegExp(/items(\?search=\w+|\/\w+)/, 'g');
   canLoad() {
     return this.location.path() === '' ?
       !!this.router.getCurrentNavigation().extractedUrl.queryParams.search :

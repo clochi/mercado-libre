@@ -1,6 +1,6 @@
 <div class="products" *ngIf="products$ | async as products">
   <ml-breadcrumb [list]="products.categories"></ml-breadcrumb>
-  <div class="products__list">
+  <div class="section">
     <ml-product 
       *ngFor="let product of products.items; let last = last"
       [product]="product"

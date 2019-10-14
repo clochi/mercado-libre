@@ -1,0 +1,49 @@
+@import '../../../../variables.scss';
+
+.product-detail {
+
+    &__picture {
+
+        .picture__img {
+            text-align: center;
+
+            img {
+                max-width: 100%;
+            }
+        }
+
+        .picture__description {
+            padding: $general-margin-padding;
+    
+            .description__title {
+                font-size: 28px;
+            }
+    
+            .description__text {
+                font-size: 16px;
+                margin: $general-margin-padding + $general-margin-padding 0;
+                color: $middle-gray-text;
+            }
+        }
+    }
+
+    &__info {
+        min-width: 282px;
+        padding: $general-margin-padding;
+        padding-top: $general-margin-padding + $general-margin-padding;
+
+        .info__quantity {
+            font-size: 14px;
+            margin-bottom: $general-margin-padding;
+        }
+
+        .info__title, .info__price {
+            font-size: 24px;
+            margin-bottom: $general-margin-padding + $general-margin-padding;
+        }
+
+        .info__price {
+            font-size: 46px;
+        }
+    }
+}

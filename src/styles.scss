@@ -18,15 +18,59 @@ body {
     padding: 0 15px;
 }
 
+.section {
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    padding: 0 $general-margin-padding;
+}
+
 .flex {
     display: flex;
     width: 100%;
 
-    &.vertical-center {
+    &.flex-center-v {
         align-items: center;
+    }
+
+    &.flex-center-h {
+        justify-content: center;
     }
 
     &.between {
         justify-content: space-between;
+    }
+}
+
+.btn {
+
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 12px;
+
+    &.btn-default {
+        background-color: $blue;
+        color: white;
+    }
+
+    &.full-width {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .flex.small-screen {
+        flex-direction: column;
+    
+        &.flex-center-v {
+            justify-content: center;
+        }
+    
+        &.flex-center-h {
+            align-items: center;
+        }
+    
+        &.between {
+            justify-content: space-between;
+        }
     }
 }
