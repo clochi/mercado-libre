@@ -3,7 +3,7 @@ Stack: Angular, Node and Express
 
 ## Install
 
-Run `npm install`
+Clone the repo and run `npm install`
 
 ## Build
 
