@@ -12,7 +12,4 @@ export class ProductComponent {
   @Input() borderBottom: boolean;
   constructor(private router: Router) { }
 
-  showProduct(id) {
-    this.router.navigate([`items/${id}`]);
-  }
 }

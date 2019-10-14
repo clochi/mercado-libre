@@ -24,7 +24,11 @@ const querySearch = (req, res) => {
             const responseData = {
                 author: null,
                 categories: querySearchData.getCategories(),
-                items: querySearchData.getItems()
+                items: querySearchData.getItems(),
+                author: {
+                    name: 'Claudio',
+                    lastname: 'Zurita'
+                }
             }
             res.send(responseData);
         } else {

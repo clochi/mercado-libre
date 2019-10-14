@@ -13,7 +13,9 @@
       </div>
       <div class="product-detail__info">
         <div class="info__quantity">
-            <span>{{product.condition === 'new' ? 'Nuevo' : 'Usado'}}<span *ngIf="product.sold_quantity"> - {{product.sold_quantity}} vendidos</span></span>
+            <span>{{product.condition === 'new' ? 'Nuevo' : 'Usado'}}
+              <span *ngIf="product.sold_quantity"> - {{product.sold_quantity}} vendidos</span>
+            </span>
         </div>
         <div class="info__title">
             <span>{{product.title}}</span>

@@ -21,7 +21,10 @@ class ItemById {
             sold_quantity: this.sold_quantity,
             description: this.description,
             categories: this.getCategories(),
-            author: {}
+            author: {
+                name: 'Claudio',
+                lastname: 'Zurita'
+            }
         }
     }
 

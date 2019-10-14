@@ -9,6 +9,7 @@ a:link, a:visited, a:active {
 .product {
     padding: $general-margin-padding 0;
     &__picture {
+        align-self: center;
         align-items: center;
         display: flex;
         height: 180px;
