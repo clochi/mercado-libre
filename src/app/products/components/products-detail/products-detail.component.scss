@@ -3,7 +3,7 @@
 .product-detail {
 
     &__picture {
-
+        padding-top: $general-margin-padding + $general-margin-padding;
         .picture__img {
             text-align: center;
 

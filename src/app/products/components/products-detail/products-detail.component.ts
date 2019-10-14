@@ -4,7 +4,7 @@ import { ProductsService } from '../../services/products.service';
 import { Observable } from 'rxjs';
 import { ItemDetail } from '../../models/item-details';
 @Component({
-  selector: 'ml-products-detail',
+  selector: 'app-products-detail',
   templateUrl: './products-detail.component.html',
   styleUrls: ['./products-detail.component.scss']
 })

@@ -1,5 +1,5 @@
 <div class="product-detail" *ngIf="product$ | async as product">
-  <ml-breadcrumb [list]="product.categories"></ml-breadcrumb>
+  <app-breadcrumb [list]="product.categories"></app-breadcrumb>
   <div class="section">
     <div class="flex small-screen">
       <div class="product-detail__picture">

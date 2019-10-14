@@ -3,7 +3,7 @@ import { Product } from '../../models/product';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'ml-product',
+  selector: 'app-product',
   templateUrl: './product.component.html',
   styleUrls: ['./product.component.scss']
 })

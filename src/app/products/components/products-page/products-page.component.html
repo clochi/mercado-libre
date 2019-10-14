@@ -1,10 +1,10 @@
 <div class="products" *ngIf="products$ | async as products">
-  <ml-breadcrumb [list]="products.categories"></ml-breadcrumb>
+  <app-breadcrumb [list]="products.categories"></app-breadcrumb>
   <div class="section">
-    <ml-product 
+    <app-product 
       *ngFor="let product of products.items; let last = last"
       [product]="product"
       [borderBottom]="!last">
-    </ml-product>
+    </app-product>
   </div>
 </div>

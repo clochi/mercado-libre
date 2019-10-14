@@ -9,7 +9,7 @@ import { NgForm } from '@angular/forms';
 })
 export class AppComponent {
   constructor(private router: Router) {}
-
+  search;
   searchValue(param: NgForm) {
     this.router.navigate(['items'], { queryParams: { search: param.value.search } });
   }

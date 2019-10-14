@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
 import { Item } from '../../models/item';
 
 @Component({
-  selector: 'ml-products-page',
+  selector: 'app-products-page',
   templateUrl: './products-page.component.html',
   styleUrls: ['./products-page.component.scss']
 })
