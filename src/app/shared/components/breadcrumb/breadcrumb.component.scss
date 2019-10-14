@@ -1,0 +1,12 @@
+@import '../../../../variables.scss';
+
+.breadcrumb {
+    color: $middle-gray-text;
+    font-size: $breadcrumb-text-size;
+    padding: $general-margin-padding 0;
+
+    &__item:not(:last-child)::after {
+        content: '>';
+        margin: 0 5px;
+    }
+}

@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'mercado-libre';
+  constructor(private router: Router) {}
+
+  searchValue(param: NgForm) {
+    this.router.navigate(['items'], { queryParams: { search: param.value.search } });
+  }
 }

@@ -1,0 +1,20 @@
+<a
+  class="flex product"
+  [class.product--border]="borderBottom"
+  [routerLink]="product.id">
+  <div class="product__picture">
+    <img [src]="product.picture" alt="">
+  </div>
+  <div class="flex between product__info">
+    <div class="info__details">
+      <span class="details__price">{{product.price.amount | currency:'ARS':undefined:'1.0-0'}}</span>
+      <span class="details__shipping" *ngIf="product.free_shipping">
+        <img src="../../../../assets/ic_shipping.png" alt="">
+      </span>
+      <p class="details__name">{{product.title}}</p>
+    </div>
+    <div class="info__ubication">
+        {{product.ubication}}
+      </div>
+  </div>
+</a>

@@ -1,0 +1,10 @@
+@import '../../../../variables.scss';
+
+.products {
+
+    &__list {
+        background-color: #FFFFFF;
+        border-radius: 4px;
+        padding: 0 $general-margin-padding;
+    }
+}

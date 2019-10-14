@@ -1,0 +1,3 @@
+<div class="product-detail" *ngIf="product$ | async as product">
+  <ml-breadcrumb [list]="product.categories"></ml-breadcrumb>
+</div>

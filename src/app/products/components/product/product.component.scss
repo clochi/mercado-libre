@@ -1,0 +1,46 @@
+@import '../../../../variables.scss';
+
+a {
+    color: $text-color;
+}
+a:link, a:visited, a:active {
+    text-decoration: none;
+}
+.product {
+    padding: $general-margin-padding 0;
+    &__picture {
+        align-items: center;
+        display: flex;
+        height: 180px;
+        justify-content: center;
+        width: 180px;
+    }
+
+    &__info {
+        flex: 1;
+        padding-top: 15px;
+
+        .info__details {
+            flex: 4;
+            padding: 0 $general-margin-padding;
+
+            .details__price {
+                font-size: 24px;
+                margin-right: 10px;
+            }
+            .details__name {
+                font-size: 18px;
+            }
+        }
+
+        .info__ubication {
+            flex: 1;
+            margin-top: 20px;
+            font-size: 12px;
+        }
+    }
+
+    &--border {
+        border-bottom: 1px solid $light-gray-background;
+    }
+}
